@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #222;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 470px;
+    background: #9fd3c7;
+    margin: 0 auto;
+    padding: 40px 35px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .search input {
+    border: 0;
+    outline: 0;
+    background: #ececec;
+    color: #555;
+    padding: 10px 25px;
+    height: 50px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .search button {
+    border: 0;
+    outline: 0;
+    background: #ececec;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .search button:hover {
+    background: #ddd;
+  }
+  
+  .search button i {
+    color: #555;
+    font-size: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .search button:hover i {
+    color: #000;
+  }
+  
+  .card p {
+    font-size: 18px;
+  }
+
+  .weather {
+    display :none;
+  }
+  .weather h1 {
+    font-size: 80px;
+    font-weight: 700    ;
+    color: #343a41;
+    
+  }
+  .weather h2 {
+    font-size: 45px;
+    font-weight: 400;
+    color: #555;
+  }
+  .weather i{
+    font-size: 50px;
+    color: #238bc7;
+    margin-top: 20px;
+  }
+  .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+  }
+
+  .col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .col i {
+    font-size: 30px;
+    color: #238bc7;
+
+  }
+
+  .col p{
+    font-size: 20px;
+    color: #555;
+    margin: 10px 0 0 10px;
+  }
+  /* Media Queries for Responsiveness */
+  @media screen and (max-width: 768px) {
+    .card {
+      padding: 30px 25px;
+    }
+    
+    .card h1 {
+      font-size: 26px;
+    }
+    
+
+  }
+  
+  @media screen and (max-width: 480px) {
+    .card {
+      padding: 25px 20px;
+    }
+    
+    .search {
+      flex-direction: column;
+    }
+    
+    .search input {
+      margin-right: 0;
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+    
+    .card h1 {
+      font-size: 22px;
+    }
+    
+    .card p {
+      font-size: 14px;
+    }
+  }
